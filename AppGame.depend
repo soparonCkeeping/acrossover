@@ -1,0 +1,93 @@
+# depslib dependency file v1.0
+1619430497 source:d:\kaka\appgame\main.cpp
+	<iostream>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+	<SDL2/SDL_mixer.h>
+	<string>
+	<ctime>
+	<vector>
+	"render.h"
+	"state.h"
+	"sprite.h"
+	"SoundTheme.h"
+	"State2.h"
+
+1619431364 source:d:\kaka\appgame\render.cpp
+	<SDL2/SDL.h>
+	<iostream>
+	"render.h"
+	<vector>
+	"sprite.h"
+
+1619318025 d:\kaka\appgame\render.h
+	<iostream>
+	<SDL2/SDL.h>
+	<vector>
+
+1619344193 d:\kaka\appgame\state.h
+	<iostream>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+
+1619430952 source:d:\kaka\appgame\state.cpp
+	<iostream>
+	<SDL2/SDL.h>
+	<SDL2/SDL_ttf.h>
+	"state.h"
+	"sprite.h"
+	"SoundTheme.h"
+	"MenuEffect.h"
+
+1619430497 source:d:\kaka\appgame\sprite.cpp
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+	<stdio.h>
+	<string>
+	<iostream>
+	<string>
+	"sprite.h"
+
+1619341724 d:\kaka\appgame\sprite.h
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+	<stdio.h>
+	<string>
+	<iostream>
+	<string>
+
+1619237276 source:d:\kaka\appgame\spritesheet.cpp
+	<SDL2/SDL.h>
+	<SDL2/SDL_image.h>
+
+1619430497 source:d:\kaka\appgame\soundtheme.cpp
+	<SDL2/SDL_mixer.h>
+	<SDL2/SDL.h>
+	<iostream>
+	"SoundTheme.h"
+
+1619366212 d:\kaka\appgame\soundtheme.h
+	<iostream>
+	<SDL2/SDL.h>
+	<SDL2/SDL_mixer.h>
+
+1619368569 d:\kaka\appgame\menueffect.h
+	<iostream>
+	<SDL2/SDL.h>
+
+1619431813 source:d:\kaka\appgame\menueffect.cpp
+	<iostream>
+	<SDL2/SDL.h>
+	"MenuEffect.h"
+	"sprite.h"
+
+1619430497 d:\kaka\appgame\state2.h
+	<iostream>
+	<SDL2/SDL.h>
+
+1619430562 source:d:\kaka\appgame\state2.cpp
+	<iostream>
+	<SDL2/SDL.h>
+	"State2.h"
+	"sprite.h"
+
