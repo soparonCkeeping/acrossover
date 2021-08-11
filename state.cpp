@@ -10,6 +10,7 @@ using namespace std;
 
 int textFrame = 0;
 int directFrame = 1;
+bool musicIsPlaying = true;
 
 void gameOver (SDL_Renderer* renderer, SDL_Event event, int scale, int wscale, int slength) {
 
@@ -62,7 +63,6 @@ bool MusicStateIsOn = true;
 bool MusicStateIsOff = false;
 
 
-//
 
 void HelpState(SDL_Renderer* renderer, SDL_Event event) {
 
@@ -93,16 +93,41 @@ void HelpState(SDL_Renderer* renderer, SDL_Event event) {
 
 void SetingState(SDL_Renderer* renderer, SDL_Event event) {
 
+
+     while( SDL_PollEvent( &event ) != 0 ){
+        if (event.type == SDL_QUIT) {
+                exit(0);
+            }
+
+        if(event.key.keysym.scancode == SDL_SCANCODE_ESCAPE) {
+            SettingStateOn   = false;
+        }
+    }
+
+
+
+    renderLetter(":> ", 90, 200, renderer);
     if(textFrame / 400 == 2 || textFrame / 400 == 3) {
         renderLetter("Main theme", -1, 200, renderer);
     }
 
 
+
     if(MusicStateIsOn) {
         renderLetter("ON", -1, 240, renderer);
+
+        if(!musicIsPlaying) {
+            resumeMainTheme();
+            musicIsPlaying = true;
+        }
+
     } else {
         renderLetter("OFF", -1, 240, renderer);
+
+        StopMainTheme();
+        musicIsPlaying = false;
     }
+
 
     while( SDL_PollEvent( &event ) != 0 ){
         if (event.type == SDL_QUIT) {

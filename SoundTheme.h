@@ -13,3 +13,5 @@ void PlayMainTheme();
 void PlaySoundEffect(int track);
 
 void StopMainTheme();
+
+void resumeMainTheme();

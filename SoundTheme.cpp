@@ -51,6 +51,7 @@ void PlayMainTheme() {
     Mix_PlayMusic(gMusic, -1);
 }
 
+
 void PlaySoundEffect(int track) {
     switch (track){
         case 1:
@@ -65,3 +66,6 @@ void StopMainTheme() {
     Mix_PauseMusic();
 }
 
+void resumeMainTheme() {
+    Mix_ResumeMusic();
+}

@@ -25,8 +25,8 @@ SDL_Rect LineMenuEffect;
 
 void LineEffectXH1(SDL_Renderer* gRenderer,  int frame) {
     LineMenuEffect.h = 5;
-    if(frame - 20 > 0) {
-        LineMenuEffect.w = frame - 20;
+    if(frame - 24 > 0) {
+        LineMenuEffect.w = frame - 24;
     }else {
         LineMenuEffect.w = 0;
     }
@@ -46,12 +46,12 @@ void LineEffectXH(SDL_Renderer* gRenderer) {
 
 void LineEffectXH2(SDL_Renderer* gRenderer,  int frame) {
     LineMenuEffect.h = 5;
-    if(14*24 - frame - 20 < 0 ) {
+    if(14*24 - frame - 24 < 0 ) {
         LineMenuEffect.w = 0;
     }else{
-        LineMenuEffect.w = 14*24 - frame -20;
+        LineMenuEffect.w = 14*24 - frame -24;
     }
-    LineMenuEffect.x = 4*24 + frame +20;
+    LineMenuEffect.x = 4*24 + frame +24;
     LineMenuEffect.y = 8*24;
     SDL_RenderFillRect (gRenderer, &LineMenuEffect);
 }
@@ -81,12 +81,12 @@ void LineEffectXL1(SDL_Renderer* gRenderer, int frame) {
 void LineEffectXL2(SDL_Renderer* gRenderer, int frame) {
     LineMenuEffect.h = 5;
 
-    if(14*24 - frame - 20 < 0 ) {
+    if(14*24 - frame - 24 < 0 ) {
         LineMenuEffect.w = 0;
     }else{
-        LineMenuEffect.w = 14*24 - frame -20;
+        LineMenuEffect.w = 14*24 - frame -24;
     }
-    LineMenuEffect.x = 4*24 + frame +20;
+    LineMenuEffect.x = 4*24 + frame +24;
 
     LineMenuEffect.y = 18*24;
     SDL_RenderFillRect (gRenderer, &LineMenuEffect);
@@ -118,16 +118,16 @@ void LineEffectYL1(SDL_Renderer* gRenderer, int frame) {
 
 
 void LineEffectYL2(SDL_Renderer* gRenderer, int frame) {
-    if(10*24 - frame - 20 < 0 ) {
+    if(10*24 - frame - 24 < 0 ) {
         LineMenuEffect.h = 0;
     }else{
-        LineMenuEffect.h = 10*24 - frame -20;
+        LineMenuEffect.h = 10*24 - frame - 24;
     }
 
     LineMenuEffect.w = 5;
     LineMenuEffect.x = 4*24;
 
-    LineMenuEffect.y = 8*24 + frame +20;
+    LineMenuEffect.y = 8*24 + frame +24;
     SDL_RenderFillRect (gRenderer, &LineMenuEffect);
 }
 
@@ -156,16 +156,16 @@ void LineEffectYH1(SDL_Renderer* gRenderer, int frame) {
 
 
 void LineEffectYH2(SDL_Renderer* gRenderer, int frame) {
-    if(10*24 - frame - 20 < 0 ) {
+    if(10*24 - frame - 24 < 0 ) {
         LineMenuEffect.h = 0;
     }else{
-        LineMenuEffect.h = 10*24 - frame -20 + 5;
+        LineMenuEffect.h = 10*24 - frame -24 + 5;
     }
 
     LineMenuEffect.w = 5;
     LineMenuEffect.x = 18*24;
 
-    LineMenuEffect.y = 8*24 + frame +20;
+    LineMenuEffect.y = 8*24 + frame +24;
     SDL_RenderFillRect (gRenderer, &LineMenuEffect);
 }
 
